@@ -1,0 +1,17 @@
+{
+  "n_pairs": 577045,
+  "conflict": 42600,
+  "dup_title": 6945,
+  "revert": 278,
+  "fix_in_flight": 7872,
+  "near_miss": 176756,
+  "both_merged": 30031,
+  "bm_shared": 6409,
+  "cross_agent": 2858,
+  "cross_agent_candidate": 99,
+  "mega": 503729,
+  "dup_title_cross_agent": 7,
+  "revert_cross_agent": 2,
+  "bm_shared_cross_agent": 90,
+  "near_miss_cross_agent": 971
+}

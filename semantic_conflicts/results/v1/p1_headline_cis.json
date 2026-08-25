@@ -1,0 +1,75 @@
+{
+  "conflict_rate_all_pairs": {
+    "p": 0.07382439844379554,
+    "lo": 0.07315256417394872,
+    "hi": 0.0745019068816023,
+    "k": 42600.0,
+    "n": 577045.0
+  },
+  "conflict_rate_cross_agent": {
+    "p": 0.24422673198040587,
+    "lo": 0.2288258444623338,
+    "hi": 0.2603142700279845,
+    "k": 698.0,
+    "n": 2858.0
+  },
+  "n_pairs": 577045,
+  "n_repos": 1100,
+  "note": "Wilson intervals treat pairs as iid; cluster-bootstrap CIs are attached below",
+  "conflict_rate_cluster_bootstrap": {
+    "value": 0.07382439844379554,
+    "lo": 0.039800267155006716,
+    "hi": 0.31033527281515744,
+    "n_iter": 5000,
+    "n_clusters": 1100,
+    "seed": 20260824,
+    "method": "cluster_bootstrap_mean_percentile",
+    "cluster": "repo"
+  },
+  "near_miss_rate_among_disjoint_cluster_bootstrap": {
+    "value": 0.3307281385362385,
+    "lo": 0.2890506576999788,
+    "hi": 0.580554323217623,
+    "n_iter": 5000,
+    "n_clusters": 875,
+    "seed": 20260824,
+    "method": "cluster_bootstrap_mean_percentile",
+    "cluster": "repo"
+  },
+  "dup_both_merged": {
+    "p": 0.4681065514758819,
+    "lo": 0.45639204758671703,
+    "hi": 0.4798563180400931,
+    "k": 3251.0,
+    "n": 6945.0
+  },
+  "dup_exactly_one_merged": {
+    "p": 0.38660907127429806,
+    "lo": 0.3752218191759278,
+    "hi": 0.3981216929284198,
+    "k": 2685.0,
+    "n": 6945.0
+  },
+  "dup_neither_merged": {
+    "p": 0.14528437724982002,
+    "lo": 0.13719277597416912,
+    "hi": 0.15376816633574886,
+    "k": 1009.0,
+    "n": 6945.0
+  },
+  "dup_no_shared_file": {
+    "p": 0.7955363570914327,
+    "lo": 0.7858889162819158,
+    "hi": 0.8048570410588163,
+    "k": 5525.0,
+    "n": 6945.0
+  },
+  "both_merged_shared_gap_lt24h": {
+    "p": 0.4772975503198627,
+    "lo": 0.4650862591558041,
+    "hi": 0.4895360401995407,
+    "k": 3059.0,
+    "n": 6409.0
+  },
+  "bm_shared_n": 6409
+}

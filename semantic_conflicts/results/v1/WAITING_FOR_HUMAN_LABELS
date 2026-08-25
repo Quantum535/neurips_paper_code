@@ -1,0 +1,3 @@
+WAITING_FOR_HUMAN_LABELS
+Gold labels come only from human annotation/adjudication.
+LLM labels are silver. Heuristic pool flags are not gold.

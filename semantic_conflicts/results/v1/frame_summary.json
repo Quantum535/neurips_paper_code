@@ -1,0 +1,16 @@
+{
+  "frame_size": 12104,
+  "n_prevalence": 4000,
+  "n_enriched": 8178,
+  "by_primary_stratum": {
+    "control": 4299,
+    "near_miss": 3143,
+    "dup": 1539,
+    "overlap_other": 1115,
+    "fix_in_flight": 886,
+    "bm_shared": 844,
+    "revert": 278
+  },
+  "seed": 20260824,
+  "dataset_version": "v1"
+}

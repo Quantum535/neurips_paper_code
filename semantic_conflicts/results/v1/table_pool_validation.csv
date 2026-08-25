@@ -1,0 +1,16 @@
+pool,n,dataset_version
+n_pairs,577045,v1
+conflict,42600,v1
+dup_title,6945,v1
+revert,278,v1
+fix_in_flight,7872,v1
+near_miss,176756,v1
+both_merged,30031,v1
+bm_shared,6409,v1
+cross_agent,2858,v1
+cross_agent_candidate,99,v1
+mega,503729,v1
+dup_title_cross_agent,7,v1
+revert_cross_agent,2,v1
+bm_shared_cross_agent,90,v1
+near_miss_cross_agent,971,v1

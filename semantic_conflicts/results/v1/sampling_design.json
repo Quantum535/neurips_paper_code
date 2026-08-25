@@ -1,0 +1,56 @@
+{
+  "seed": 20260824,
+  "config_version": "v1",
+  "option_a_enriched": {
+    "n_sample": 8178,
+    "realized_by_stratum": {
+      "revert": 278,
+      "dup": 1500,
+      "fix_in_flight": 800,
+      "bm_shared": 800,
+      "overlap_other": 800,
+      "near_miss": 2000,
+      "control": 2000
+    },
+    "inclusion": "exact n_s / N_s in disjoint primary_stratum \u00d7 mega \u00d7 cross_agent \u00d7 both_merged cells",
+    "force_census": [
+      "revert",
+      "cross_agent_candidate"
+    ],
+    "n_eff": 4173.045102575803,
+    "extreme_weights": {
+      "n_extreme": 0,
+      "threshold": 1786.4285714285713,
+      "ratio": 50.0,
+      "max_weight": 185.66666666666666,
+      "median_weight": 35.72857142857143,
+      "note": "Weights are never clipped; this is a diagnostic only."
+    }
+  },
+  "option_b_prevalence": {
+    "n_pop": 577045,
+    "n_sample": 4000,
+    "target_n": 4000,
+    "estimator": "hajek",
+    "strata": [
+      "mega",
+      "cross_agent",
+      "conflict"
+    ],
+    "inclusion": "exact n_s / N_s within mega \u00d7 cross_agent \u00d7 conflict",
+    "n_eff": 3795.9865718773867,
+    "extreme_weights": {
+      "n_extreme": 0,
+      "threshold": 7976.001324064879,
+      "ratio": 50.0,
+      "max_weight": 159.52002648129758,
+      "median_weight": 159.52002648129758,
+      "note": "Weights are never clipped; this is a diagnostic only."
+    }
+  },
+  "union_frame_size": 12104,
+  "calibration_n": 100,
+  "validation_n": 300,
+  "v0_heuristic_union_probability_not_used": true,
+  "notes": "Prevalence estimation must use in_prevalence_sample with pi_prevalence. Pool precision must use in_enriched_sample with pi_enriched as domain weights. Do not use 1-prod(1-p_i)."
+}
