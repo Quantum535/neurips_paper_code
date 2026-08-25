@@ -1,0 +1,14 @@
+repo,pr,filepath,additions,deletions
+team/app,1,src/auth.py,20,0
+team/app,2,src/login.py,15,0
+team/app,3,src/auth.py,5,5
+team/app,4,src/auth.py,8,2
+team/app,5,docs/guide.md,10,0
+team/app,6,lib/util.py,4,0
+mega/one,10,pkg/a.ts,30,0
+mega/one,11,pkg/a.ts,12,3
+mega/one,12,pkg/b.ts,9,0
+other/lib,20,README.md,2,0
+other/lib,21,src/deep/mod.py,7,0
+other/lib,22,package.json,3,1
+other/lib,23,src/deep/other.py,6,0

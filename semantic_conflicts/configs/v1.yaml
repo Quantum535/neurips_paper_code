@@ -1,0 +1,216 @@
+# Canonical Semantic Conflicts configuration (dataset/config version v1).
+# All scripts must load this file (or an explicit successor). Do not copy constants.
+#
+# Numbers under `historical_released` are frozen published/released counts used
+# ONLY for reconciliation and audit warnings. They are never substituted into
+# scientific computations.
+
+version: v1
+seed: 20260824
+expected_n_pairs: 577045
+body_truncation_chars: 1200
+files_list_cap: 80
+
+mega_repos:
+  - mochilang/mochi
+  - MontrealAI/AGI-Alpha-Agent-v0
+
+duplicate_title:
+  min_tokens: 3
+  jaccard_threshold: 0.5
+  containment_min_chars: 15
+
+revert:
+  pattern: '\b(revert|undo|rollback)\b'
+
+fix_in_flight:
+  keywords:
+    - fix
+    - fixes
+    - fixed
+    - fixing
+    - bug
+    - bugs
+    - bugfix
+    - hotfix
+    - patch
+    - patches
+    - patched
+
+# Canonical Category-I *heuristic baseline* (not a semantic detector).
+# Parent-directory prefix of each changed file, truncated to the first
+# `max_dir_components` directory components. The filename is NOT a component.
+# Repo-root files (no directory) are excluded from the intersection.
+near_miss:
+  name: dir_prefix_depth2
+  max_dir_components: 2
+  exclude_root_files: true
+  include_filename_as_component: false
+
+file_classes:
+  lockfile_basenames:
+    - package-lock.json
+    - go.sum
+    - go.mod
+    - yarn.lock
+    - gemfile.lock
+    - cargo.lock
+    - poetry.lock
+    - composer.lock
+    - pnpm-lock.yaml
+    - uv.lock
+    - bun.lockb
+  manifest_basenames:
+    - package.json
+    - setup.py
+    - setup.cfg
+    - cargo.toml
+    - gemfile
+    - composer.json
+    - build.gradle
+    - pom.xml
+    - pyproject.toml
+  docker_basenames:
+    - docker-compose.yml
+    - docker-compose.yaml
+  spec_config_classes:
+    - ci_workflow
+    - lockfile
+    - manifest
+    - docker
+    - readme
+
+sampling:
+  seed: 20260824
+  # Option B: clean probability sample of the 577,045-pair population
+  # for prevalence. Strata are mega × cross_agent × conflict.
+  prevalence:
+    n: 4000
+    min_per_stratum: 80
+    strata:
+      - mega
+      - cross_agent
+      - conflict
+  # Option A: mutually exclusive membership strata for precision / judging.
+  # Inclusion probability within a cell is exactly n_s / N_s (census if N_s <= target).
+  enriched:
+    census_if_n_le: 50
+    force_census_if:
+      - revert
+      - cross_agent_candidate
+    targets:
+      revert: census
+      dup: 1500
+      fix_in_flight: 800
+      bm_shared: 800
+      overlap_other: 800
+      near_miss: 2000
+      control: 2000
+    substrata:
+      - mega
+      - cross_agent
+      - both_merged
+    frame_a:
+      max_gap_days: 7
+      cap_per_repo: 50
+  calibration:
+    n: 100
+    quotas:
+      overlap: 30
+      dup: 30
+      revert: 10
+      near_miss: 15
+      control: 15
+  validation:
+    n: 300
+
+annotation:
+  labels:
+    - D
+    - C
+    - H
+    - B
+    - I
+    - none
+  confidence:
+    - 1
+    - 2
+    - 3
+  n_annotators: 2
+  rubric_version: v1
+  hidden_fields:
+    - merged_a
+    - merged_b
+    - both_merged
+    - closed_a
+    - closed_b
+    - state_a
+    - state_b
+    - pools
+    - pool_flags
+    - primary_stratum
+    - incl_prob
+    - pi_enriched
+    - pi_prevalence
+    - llm_category
+    - llm_provisional_category
+    - judge_category
+    - silver_label
+    - conflict_outcome
+    - sample_role
+
+judge:
+  official_without_diff:
+    - D
+    - C
+    - none
+  categories:
+    - D
+    - C
+    - H
+    - B
+    - I
+    - none
+  prompt_version: v1
+  body_chars: 1200
+  max_retries: 6
+  timeout_seconds: 300
+
+statistics:
+  wilson_z: 1.959963984540054
+  bootstrap_iterations: 5000
+  bootstrap_seed: 20260824
+  prevalence_estimator: hajek   # Hajek ratio estimator; see statistics.py
+  extreme_weight_ratio: 50.0
+  min_slice_n: 30               # below this, mark exploratory
+
+benchmark:
+  name: SemanticConflictBench
+  version: v1
+  split_seed: 20260824
+  min_gold_for_train: 200
+  gold_dev_frac: 0.4
+  gold_test_frac: 0.6
+
+static_detector:
+  name: static_dependency_detector
+  min_symbol_length: 3
+  identifier_similarity_threshold: 0.92
+  weak_fallback: identifier_similarity
+
+historical_released:
+  # Frozen numbers from verification_log.md / released results/.
+  # NEVER use these as computational substitutes.
+  purpose: reconciliation_and_audit_only
+  source: common/verification_log.md and semantic_conflicts/results/*
+  n_pairs: 577045
+  n_conflict: 42600
+  dup_title: 6945
+  revert: 278
+  fix_in_flight: 7872
+  near_miss: 176756
+  both_merged_shared: 6409
+  judging_frame: 8949
+  buggy_near_miss_path_components_including_filename: 171067
+  near_miss_depth1_noroot: 344574
+  near_miss_depth2_with_root: 187650

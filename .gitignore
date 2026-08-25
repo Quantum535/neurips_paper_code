@@ -10,3 +10,22 @@ __pycache__/
 *.fls
 *.synctex.gz
 .DS_Store
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+dist/
+build/
+
+# Local-only GitHub patch cache (licensing / redistribution)
+semantic_conflicts/results/ci/
+semantic_conflicts/results/v1/judges/*/raw.jsonl
+!semantic_conflicts/results/v1/judges/*/manifest.json
+!semantic_conflicts/results/v1/judges/*/predictions.csv
+
+# Matplotlib / Jupyter
+.ipynb_checkpoints/

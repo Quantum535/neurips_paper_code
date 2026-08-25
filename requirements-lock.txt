@@ -1,0 +1,14 @@
+# Lockfile generated from a working Python 3.13 environment used to develop this artifact.
+# Install with: pip install -r requirements-lock.txt
+# For a clean research environment prefer: pip install -e ".[dev]"
+matplotlib==3.11.1
+numpy==2.5.2
+pandas==3.0.3
+pyarrow==24.0.0
+pydantic==2.13.4
+pytest==9.1.1
+PyYAML==6.0.3
+ruff==0.16.1
+scikit-learn==1.9.0
+scipy==1.18.0
+statsmodels==0.14.6
