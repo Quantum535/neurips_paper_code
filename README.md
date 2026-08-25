@@ -50,15 +50,14 @@ semantic_conflicts/        ---- Beyond File Overlap (neurips_paper_2.pdf) ----
 
 ## Running
 
-All scripts resolve paths from the repository root (override with `MG_ROOT=/path/to/repo`). Python 3.10+, `pandas numpy`;
-`matplotlib` for figures; `git >= 2.38` for T2 replay; Claude Code logged in for the three `*_claude_code.py` scripts
-(`unset ANTHROPIC_API_KEY` so they use the subscription login).
+All scripts resolve paths from the repository root (override with `MG_ROOT` or `SEMANTIC_CONFLICTS_ROOT`).
+Install the Semantic Conflicts package with `pip install -e ".[dev]"` (Python 3.10–3.12), or set
+`PYTHONPATH=semantic_conflicts/src`. Full artifact docs: `semantic_conflicts/README.md`.
 
 ```
-python3 semantic_conflicts/scripts/pools.py                 # prints each pool size next to the paper's number
-python3 semantic_conflicts/scripts/build_judging_frame.py   # rebuilds the frame (seed 20260824)
-python3 semantic_conflicts/scripts/05_judge_p2_claude_code.py --only calibration --model sonnet
-python3 semantic_conflicts/scripts/06_score_judge.py
+python3 semantic_conflicts/scripts/pools.py                 # canonical pools (see semantic_conflicts/README.md)
+python3 -m semantic_conflicts.pipeline deterministic       # rebuild results/v1 (seed 20260824)
+python3 -m semantic_conflicts.audit --strict
 
 python3 mergegym/scripts/t3_simulator.py --check            # 97 episodes; observed/FIFO/oracle regression vs released results
 python3 mergegym/scripts/t2_replay.py --subset core         # clones ~260 repos (blob-less) into mergegym/t2_work/

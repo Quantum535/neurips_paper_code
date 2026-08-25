@@ -1,0 +1,31 @@
+cell,N,n,pi,mode,primary_stratum
+census,278,278,1.0,census,revert
+"(False, True, False)",7,7,1.0,census,dup
+"(False, False, False)",890,192,0.2157303370786517,srs_wor,dup
+"(False, False, True)",782,168,0.21483375959079284,srs_wor,dup
+"(True, False, False)",2797,602,0.21523060421880585,srs_wor,dup
+"(True, False, True)",2469,531,0.21506682867557717,srs_wor,dup
+"(False, True, True)",32,32,1.0,census,fix_in_flight
+"(True, False, True)",27,27,1.0,census,fix_in_flight
+"(False, False, False)",3427,331,0.09658593522030931,srs_wor,fix_in_flight
+"(False, False, True)",1132,109,0.09628975265017668,srs_wor,fix_in_flight
+"(False, True, False)",157,15,0.09554140127388536,srs_wor,fix_in_flight
+"(True, False, False)",2957,286,0.09671964829218803,srs_wor,fix_in_flight
+"(False, True, True)",58,58,1.0,census,bm_shared
+"(False, False, True)",4637,720,0.1552728056933362,srs_wor,bm_shared
+"(True, False, True)",142,22,0.15492957746478872,srs_wor,bm_shared
+"(False, False, False)",10004,280,0.027988804478208718,srs_wor,overlap_other
+"(False, True, False)",444,12,0.02702702702702703,srs_wor,overlap_other
+"(True, False, False)",18128,508,0.028022947925860547,srs_wor,overlap_other
+"(False, True, True)",20,20,1.0,census,near_miss
+"(False, False, False)",22930,265,0.01155691234191016,srs_wor,near_miss
+"(False, False, True)",4201,48,0.011425850987860033,srs_wor,near_miss
+"(False, True, False)",951,11,0.011566771819137749,srs_wor,near_miss
+"(True, False, False)",133821,1544,0.01153780049469067,srs_wor,near_miss
+"(True, False, True)",9692,112,0.011555922410235245,srs_wor,near_miss
+"(False, False, False)",18715,105,0.0056104728827144,srs_wor,control
+"(False, False, True)",3616,20,0.0055309734513274336,srs_wor,control
+"(False, True, False)",1114,6,0.005385996409335727,srs_wor,control
+"(False, True, True)",73,1,0.0136986301369863,srs_wor,control
+"(True, False, False)",330443,1851,0.005601571224084033,srs_wor,control
+"(True, False, True)",3101,17,0.005482102547565301,srs_wor,control

@@ -1,0 +1,66 @@
+# Tiny-fixture config for CI and unit-speed deterministic pipeline.
+# Inherits scientific definitions from v1.yaml; overrides paths and sample sizes.
+
+extends: v1.yaml
+version: ci
+seed: 20260824
+expected_n_pairs: null   # fixture size is not the frozen 577,045 artifact
+fixture: true
+mega_repos:
+  - mega/one
+  - mochilang/mochi
+  - MontrealAI/AGI-Alpha-Agent-v0
+
+data:
+  pairs: semantic_conflicts/tests/fixtures/tiny/pairs_labeled.csv
+  files: semantic_conflicts/tests/fixtures/tiny/pr_files.csv
+  texts: semantic_conflicts/tests/fixtures/tiny/pr_texts.csv
+  repos: semantic_conflicts/tests/fixtures/tiny/repo_stats.csv
+
+sampling:
+  seed: 20260824
+  prevalence:
+    n: 12
+    min_per_stratum: 1
+    strata:
+      - mega
+      - cross_agent
+      - conflict
+  enriched:
+    census_if_n_le: 2
+    force_census_if:
+      - revert
+      - cross_agent_candidate
+    targets:
+      revert: census
+      dup: 4
+      fix_in_flight: 3
+      bm_shared: 3
+      overlap_other: 3
+      near_miss: 4
+      control: 4
+    substrata:
+      - mega
+      - cross_agent
+      - both_merged
+    frame_a:
+      max_gap_days: 7
+      cap_per_repo: 3
+  calibration:
+    n: 6
+    quotas:
+      overlap: 2
+      dup: 1
+      revert: 1
+      near_miss: 1
+      control: 1
+  validation:
+    n: 6
+
+statistics:
+  wilson_z: 1.959963984540054
+  bootstrap_iterations: 50
+  bootstrap_seed: 20260824
+  prevalence_estimator: hajek
+  extreme_weight_ratio: 50.0
+  min_slice_n: 3

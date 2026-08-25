@@ -1,0 +1,65 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "semantic-conflicts"
+version = "0.1.0"
+description = "Research artifact for Beyond File Overlap: Semantic Conflicts Between Concurrent AI Coding Agent Pull Requests"
+readme = "semantic_conflicts/README.md"
+requires-python = ">=3.10,<3.14"
+license = {text = "MIT"}
+authors = [{name = "Semantic Conflicts authors"}]
+dependencies = [
+  "pandas>=2.0",
+  "numpy>=1.24",
+  "scipy>=1.10",
+  "scikit-learn>=1.3",
+  "statsmodels>=0.14",
+  "matplotlib>=3.7",
+  "pyarrow>=14",
+  "pydantic>=2.5",
+  "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.4",
+  "pytest-cov>=4.1",
+  "ruff>=0.4",
+]
+static = [
+  "tree-sitter>=0.23",
+]
+github = [
+  "requests>=2.31",
+]
+
+[project.scripts]
+semantic-conflicts = "semantic_conflicts.__main__:main"
+
+[tool.setuptools]
+package-dir = {"" = "semantic_conflicts/src"}
+
+[tool.setuptools.packages.find]
+where = ["semantic_conflicts/src"]
+
+[tool.setuptools.package-data]
+semantic_conflicts = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["semantic_conflicts/tests"]
+pythonpath = ["semantic_conflicts/src"]
+addopts = "-q --strict-markers"
+filterwarnings = [
+  "ignore::DeprecationWarning",
+]
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+src = ["semantic_conflicts/src", "semantic_conflicts/tests"]
+
+[tool.ruff.lint]
+select = ["E", "F"]
+ignore = ["E501"]

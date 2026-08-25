@@ -1,0 +1,343 @@
+{
+  "canonical_definition": {
+    "name": "dir_prefix_depth2",
+    "rule": "parent directory of each changed file, truncated to the first 2 directory components; filename is not a component; repo-root files excluded",
+    "include_filename_as_component": false,
+    "count": 176756,
+    "share_of_disjoint_file_pairs": 0.3307281385362385
+  },
+  "buggy_path_components_including_filename": {
+    "rule": "first two path components including the filename; root files skipped",
+    "count": 171067,
+    "identical_to_dirs_only": true,
+    "dirs_only_count": 171067
+  },
+  "cross_checks": {
+    "n_disjoint_file_pairs": 534445,
+    "depth1_noroot": 344574,
+    "depth2_with_root": 187650,
+    "depth3_noroot": 79554
+  },
+  "difference": {
+    "canonical_minus_buggy": 5689,
+    "n_only_in_canonical": 5689,
+    "reason": "The buggy reading treats the filename as a path component, so a file living directly in a directory (src/foo.py) contributes the key 'src/foo.py' rather than 'src'. Among disjoint-file pairs that key cannot intersect. Those pairs still match the canonical parent-directory prefix. Empirically this also equals the 'dirs_only' variant (keys emitted only for files with >=2 directory components).",
+    "examples": [
+      {
+        "repo": "3rdIteration/btcrecover",
+        "pr_a": 601,
+        "pr_b": 608,
+        "canonical_intersect": [
+          "docs"
+        ],
+        "files_a_sample": [
+          ".github/ISSUE_TEMPLATE/bug_report.md",
+          ".github/ISSUE_TEMPLATE/feature_request.md",
+          "README.md",
+          "btcrecover/wordlists/blockchainpassword_words_v3-en.txt",
+          "docs/donate.md"
+        ],
+        "files_b_sample": [
+          ".github/workflows/Latest-Run-All-Tests_Base.yml",
+          ".github/workflows/Latest-Run-All-Tests_Full.yml",
+          ".github/workflows/Weekly-Run-All-Tests-Full.yml",
+          ".github/workflows/Weekly-Run-All-Tests_Base.yml",
+          "docs/requirements.txt",
+          "requirements-full.txt"
+        ],
+        "why": "Both PRs change files whose parent-directory prefix matches (typically a depth-1 directory such as src/foo.py -> src). The buggy rule maps src/foo.py to src/foo.py, so disjoint files in the same folder never match."
+      },
+      {
+        "repo": "3rdIteration/btcrecover",
+        "pr_a": 601,
+        "pr_b": 609,
+        "canonical_intersect": [
+          "docs"
+        ],
+        "files_a_sample": [
+          ".github/ISSUE_TEMPLATE/bug_report.md",
+          ".github/ISSUE_TEMPLATE/feature_request.md",
+          "README.md",
+          "btcrecover/wordlists/blockchainpassword_words_v3-en.txt",
+          "docs/donate.md"
+        ],
+        "files_b_sample": [
+          ".github/workflows/termux-tests.yml",
+          "btcrecover/test/test_passwords.py",
+          "btcrecover/test/test_seeds.py",
+          "docs/INSTALL.md"
+        ],
+        "why": "Both PRs change files whose parent-directory prefix matches (typically a depth-1 directory such as src/foo.py -> src). The buggy rule maps src/foo.py to src/foo.py, so disjoint files in the same folder never match."
+      },
+      {
+        "repo": "3rdIteration/btcrecover",
+        "pr_a": 604,
+        "pr_b": 611,
+        "canonical_intersect": [
+          "btcrecover"
+        ],
+        "files_a_sample": [
+          "btcrecover/addressset.py"
+        ],
+        "files_b_sample": [
+          "README.md",
+          "btcrecover/btcrseed.py",
+          "btcrecover/test/test_seeds.py",
+          "docs/Usage_Examples/basic_password_recoveries.md",
+          "docs/Usage_Examples/basic_seed_recoveries.md",
+          "docs/index.md"
+        ],
+        "why": "Both PRs change files whose parent-directory prefix matches (typically a depth-1 directory such as src/foo.py -> src). The buggy rule maps src/foo.py to src/foo.py, so disjoint files in the same folder never match."
+      },
+      {
+        "repo": "3rdIteration/btcrecover",
+        "pr_a": 604,
+        "pr_b": 612,
+        "canonical_intersect": [
+          "btcrecover"
+        ],
+        "files_a_sample": [
+          "btcrecover/addressset.py"
+        ],
+        "files_b_sample": [
+          ".github/workflows/PoCL-tests-full.yml",
+          ".github/workflows/PoCL-tests.yml",
+          "btcrecover/btcrpass.py",
+          "btcrecover/btcrseed.py",
+          "btcrecover/opencl_helpers.py",
+          "lib/opencl_brute/opencl.py"
+        ],
+        "why": "Both PRs change files whose parent-directory prefix matches (typically a depth-1 directory such as src/foo.py -> src). The buggy rule maps src/foo.py to src/foo.py, so disjoint files in the same folder never match."
+      },
+      {
+        "repo": "3rdIteration/btcrecover",
+        "pr_a": 605,
+        "pr_b": 612,
+        "canonical_intersect": [
+          "btcrecover"
+        ],
+        "files_a_sample": [
+          "btcrecover/addressset.py",
+          "btcrecover/test/test_seeds.py"
+        ],
+        "files_b_sample": [
+          ".github/workflows/PoCL-tests-full.yml",
+          ".github/workflows/PoCL-tests.yml",
+          "btcrecover/btcrpass.py",
+          "btcrecover/btcrseed.py",
+          "btcrecover/opencl_helpers.py",
+          "lib/opencl_brute/opencl.py"
+        ],
+        "why": "Both PRs change files whose parent-directory prefix matches (typically a depth-1 directory such as src/foo.py -> src). The buggy rule maps src/foo.py to src/foo.py, so disjoint files in the same folder never match."
+      },
+      {
+        "repo": "3rdIteration/btcrecover",
+        "pr_a": 604,
+        "pr_b": 613,
+        "canonical_intersect": [
+          "btcrecover"
+        ],
+        "files_a_sample": [
+          "btcrecover/addressset.py"
+        ],
+        "files_b_sample": [
+          "btcrecover/btcrseed.py"
+        ],
+        "why": "Both PRs change files whose parent-directory prefix matches (typically a depth-1 directory such as src/foo.py -> src). The buggy rule maps src/foo.py to src/foo.py, so disjoint files in the same folder never match."
+      },
+      {
+        "repo": "3rdIteration/btcrecover",
+        "pr_a": 605,
+        "pr_b": 613,
+        "canonical_intersect": [
+          "btcrecover"
+        ],
+        "files_a_sample": [
+          "btcrecover/addressset.py",
+          "btcrecover/test/test_seeds.py"
+        ],
+        "files_b_sample": [
+          "btcrecover/btcrseed.py"
+        ],
+        "why": "Both PRs change files whose parent-directory prefix matches (typically a depth-1 directory such as src/foo.py -> src). The buggy rule maps src/foo.py to src/foo.py, so disjoint files in the same folder never match."
+      },
+      {
+        "repo": "3rdIteration/btcrecover",
+        "pr_a": 604,
+        "pr_b": 614,
+        "canonical_intersect": [
+          "btcrecover"
+        ],
+        "files_a_sample": [
+          "btcrecover/addressset.py"
+        ],
+        "files_b_sample": [
+          "btcrecover/btcrpass.py",
+          "btcrecover/test/test_passwords.py"
+        ],
+        "why": "Both PRs change files whose parent-directory prefix matches (typically a depth-1 directory such as src/foo.py -> src). The buggy rule maps src/foo.py to src/foo.py, so disjoint files in the same folder never match."
+      },
+      {
+        "repo": "3rdIteration/btcrecover",
+        "pr_a": 601,
+        "pr_b": 615,
+        "canonical_intersect": [
+          "docs"
+        ],
+        "files_a_sample": [
+          ".github/ISSUE_TEMPLATE/bug_report.md",
+          ".github/ISSUE_TEMPLATE/feature_request.md",
+          "README.md",
+          "btcrecover/wordlists/blockchainpassword_words_v3-en.txt",
+          "docs/donate.md"
+        ],
+        "files_b_sample": [
+          "docs/INSTALL.md",
+          "lib/pylibscrypt/__init__.py",
+          "requirements-full.txt"
+        ],
+        "why": "Both PRs change files whose parent-directory prefix matches (typically a depth-1 directory such as src/foo.py -> src). The buggy rule maps src/foo.py to src/foo.py, so disjoint files in the same folder never match."
+      },
+      {
+        "repo": "567-labs/instructor",
+        "pr_a": 1636,
+        "pr_b": 1654,
+        "canonical_intersect": [
+          "instructor"
+        ],
+        "files_a_sample": [
+          "docs/concepts/handler_architecture.md",
+          "examples/test_handler_impl.py",
+          "instructor/handlers/__init__.py",
+          "instructor/handlers/anthropic.py",
+          "instructor/handlers/base.py",
+          "instructor/handlers/registry.py"
+        ],
+        "files_b_sample": [
+          "instructor/auto_client.py",
+          "instructor/cache/__init__.py",
+          "instructor/patch.py",
+          "pyrightconfig.json",
+          "tests/test_cache_integration.py"
+        ],
+        "why": "Both PRs change files whose parent-directory prefix matches (typically a depth-1 directory such as src/foo.py -> src). The buggy rule maps src/foo.py to src/foo.py, so disjoint files in the same folder never match."
+      },
+      {
+        "repo": "567-labs/instructor",
+        "pr_a": 1706,
+        "pr_b": 1717,
+        "canonical_intersect": [
+          "instructor"
+        ],
+        "files_a_sample": [
+          "AGENT.md",
+          "docs/concepts/batch.md",
+          "docs/concepts/caching.md",
+          "docs/concepts/distillation.md",
+          "docs/concepts/error_handling.md",
+          "docs/concepts/fastapi.md"
+        ],
+        "files_b_sample": [
+          "README.md",
+          "docs/index.md",
+          "instructor/auto_client.py",
+          "tests/test_auto_client.py"
+        ],
+        "why": "Both PRs change files whose parent-directory prefix matches (typically a depth-1 directory such as src/foo.py -> src). The buggy rule maps src/foo.py to src/foo.py, so disjoint files in the same folder never match."
+      },
+      {
+        "repo": "567-labs/instructor",
+        "pr_a": 1703,
+        "pr_b": 1727,
+        "canonical_intersect": [
+          "instructor"
+        ],
+        "files_a_sample": [
+          ".vscode/settings.json",
+          "docs/concepts/logging.md",
+          "docs/integrations/azure.md",
+          "instructor/auto_client.py",
+          "instructor/utils.py",
+          "tests/llm/test_genai/test_utils.py"
+        ],
+        "files_b_sample": [
+          "instructor/__init__.py",
+          "instructor/client.py",
+          "instructor/client_anthropic.py",
+          "instructor/client_bedrock.py",
+          "instructor/client_cerebras.py",
+          "instructor/client_cohere.py"
+        ],
+        "why": "Both PRs change files whose parent-directory prefix matches (typically a depth-1 directory such as src/foo.py -> src). The buggy rule maps src/foo.py to src/foo.py, so disjoint files in the same folder never match."
+      },
+      {
+        "repo": "567-labs/instructor",
+        "pr_a": 1706,
+        "pr_b": 1754,
+        "canonical_intersect": [
+          "instructor"
+        ],
+        "files_a_sample": [
+          "AGENT.md",
+          "docs/concepts/batch.md",
+          "docs/concepts/caching.md",
+          "docs/concepts/distillation.md",
+          "docs/concepts/error_handling.md",
+          "docs/concepts/fastapi.md"
+        ],
+        "files_b_sample": [
+          "instructor/auto_client.py",
+          "instructor/mode.py",
+          "instructor/providers/bedrock/client.py",
+          "instructor/providers/bedrock/utils.py"
+        ],
+        "why": "Both PRs change files whose parent-directory prefix matches (typically a depth-1 directory such as src/foo.py -> src). The buggy rule maps src/foo.py to src/foo.py, so disjoint files in the same folder never match."
+      },
+      {
+        "repo": "567-labs/kura",
+        "pr_a": 69,
+        "pr_b": 77,
+        "canonical_intersect": [
+          "kura"
+        ],
+        "files_a_sample": [
+          "docs/index.md",
+          "kura/dimensionality.py"
+        ],
+        "files_b_sample": [
+          "kura/base_classes/__init__.py",
+          "kura/base_classes/visualization.py",
+          "kura/kura.py",
+          "kura/visualization.py"
+        ],
+        "why": "Both PRs change files whose parent-directory prefix matches (typically a depth-1 directory such as src/foo.py -> src). The buggy rule maps src/foo.py to src/foo.py, so disjoint files in the same folder never match."
+      },
+      {
+        "repo": "Automattic/wp-feature-api",
+        "pr_a": 53,
+        "pr_b": 54,
+        "canonical_intersect": [
+          "includes"
+        ],
+        "files_a_sample": [
+          "includes/load.php"
+        ],
+        "files_b_sample": [
+          "includes/class-wp-feature-registry.php"
+        ],
+        "why": "Both PRs change files whose parent-directory prefix matches (typically a depth-1 directory such as src/foo.py -> src). The buggy rule maps src/foo.py to src/foo.py, so disjoint files in the same folder never match."
+      }
+    ]
+  },
+  "historical_released": {
+    "near_miss_count": 176756,
+    "buggy_count": 171067,
+    "depth1_noroot": 344574,
+    "depth2_with_root": 187650,
+    "source": "common/verification_log.md and semantic_conflicts/results/*",
+    "note": "Historical numbers are recorded for reconciliation; they are not inputs to membership."
+  },
+  "match_historical_canonical": true,
+  "match_historical_buggy": true,
+  "canonical_is_used_for_all_downstream_flags": true
+}

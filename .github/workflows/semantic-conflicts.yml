@@ -1,0 +1,43 @@
+name: semantic-conflicts
+
+on:
+  push:
+    paths:
+      - "semantic_conflicts/**"
+      - "pyproject.toml"
+      - ".github/workflows/semantic-conflicts.yml"
+      - "derived/**"
+      - "data/**"
+  pull_request:
+    paths:
+      - "semantic_conflicts/**"
+      - "pyproject.toml"
+      - ".github/workflows/semantic-conflicts.yml"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+      - name: Lint
+        run: |
+          ruff check semantic_conflicts/src semantic_conflicts/tests
+      - name: Unit tests
+        run: |
+          pytest semantic_conflicts/tests -q
+      - name: Tiny-fixture deterministic pipeline + audit
+        run: |
+          python -m semantic_conflicts.pipeline deterministic --config semantic_conflicts/configs/ci.yaml --out semantic_conflicts/results/ci
+          python -m semantic_conflicts.audit --config semantic_conflicts/configs/ci.yaml --out semantic_conflicts/results/ci --strict
+      - name: Note
+        run: echo "Network/GitHub/LLM jobs are not run in ordinary CI."

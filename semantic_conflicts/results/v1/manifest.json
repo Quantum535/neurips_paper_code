@@ -1,0 +1,69 @@
+{
+  "dataset_version": "v1",
+  "config_version": "v1",
+  "config_path": "/Users/Arjun/cursor/neurips_paper_code/semantic_conflicts/configs/v1.yaml",
+  "config_sha256": "8175f9ce010488b36ea4e014f1b280d555ecf5478a396a4cd543c5d5f292e18a",
+  "git_commit": "3f48e37bb510bf9e2ba75485b5ab27b98d774b09",
+  "utc_timestamp": "2026-08-25T01:40:18Z",
+  "python_version": "3.13.2",
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "dependency_versions": {
+    "pandas": "3.0.3",
+    "numpy": "2.5.2",
+    "scipy": "1.18.0",
+    "scikit-learn": "1.9.0",
+    "statsmodels": "0.14.6",
+    "matplotlib": "3.11.1",
+    "pyarrow": "24.0.0",
+    "pydantic": "2.13.4",
+    "PyYAML": "6.0.3"
+  },
+  "seed": 20260824,
+  "sampling_seed": 20260824,
+  "input_sha256": {
+    "pairs_labeled": "9b1c0c50f5b18132300564a55fbe933fee4e08fa1808fe79efd0084e9ea00314",
+    "pr_files": "30b3c72d2f10ef89d0dfcde01210d359f61ea04612e86e49d9a930e8829cc347",
+    "pr_texts": "81f53aca2419a7d079b9f1cbfabe78531304be37267c435ca7c0c22a1d49ab72",
+    "repo_stats": "6e406576f597cfea31c933ca729d2e5b599285c78a48eb99f04c5ee0e5bed6ee",
+    "config": "8175f9ce010488b36ea4e014f1b280d555ecf5478a396a4cd543c5d5f292e18a"
+  },
+  "output_sha256": {
+    "pool_flags": "ee637efe4711a474623861db77f3dcc1d4430bc76d1befa4ef205596698fce0a",
+    "pool_counts": "a433f16b566c7f01ff05c19163f4952b60c9b10123f30e7758875b296b03a64f",
+    "near_miss_reconciliation": "f98c250393c76556422f568b68bb87720855be36889f70e2b7b5e71473d4d8c9",
+    "p1_outcomes": "760f2c8d96e7823b2b3491f18085c2cdab05bdee58f95d725a1d0addbc660538",
+    "p1_headline_cis": "27cdbb4f0082da1a394635fc2bcca9ed543c816595239761aab705958ad5e730",
+    "judging_frame": "1dff4ceecd03bed4def6e9374e97ff8dc84d4bc7046c23445444ccdc6703d87e",
+    "sampling_design": "56ed9a478c8251e483a9a0c413597dcea80dc9345b89dfdd75ffc3bcb4745be4",
+    "frame_summary": "00e116323480da9a36779cea143f4524503ea46c63482670b6c16c19311370e4",
+    "cross_agent_cases": "b4f17c056396f36ac383d95aaac19f16e9254c06ca1d88c2e7e26fa93543dd44"
+  },
+  "row_counts": {
+    "pairs": 577045,
+    "pr_files": 575913,
+    "pr_texts": 33596,
+    "frame": 12104,
+    "calibration": 100,
+    "validation": 300
+  },
+  "pool_counts": {
+    "n_pairs": 577045,
+    "conflict": 42600,
+    "dup_title": 6945,
+    "revert": 278,
+    "fix_in_flight": 7872,
+    "near_miss": 176756,
+    "both_merged": 30031,
+    "bm_shared": 6409,
+    "cross_agent": 2858,
+    "cross_agent_candidate": 99,
+    "mega": 503729,
+    "dup_title_cross_agent": 7,
+    "revert_cross_agent": 2,
+    "bm_shared_cross_agent": 90,
+    "near_miss_cross_agent": 971
+  },
+  "extra": {
+    "near_miss_reconciliation_canonical": 176756
+  }
+}

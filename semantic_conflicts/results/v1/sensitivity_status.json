@@ -1,0 +1,4 @@
+{
+  "gold_precision_recall": "NOT AVAILABLE: human gold labels required",
+  "note": "Candidate counts are deterministic. Gold PR/RC require human labels."
+}

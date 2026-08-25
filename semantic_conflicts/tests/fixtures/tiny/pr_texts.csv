@@ -1,0 +1,14 @@
+repo,pr,agent,state,title,body,merged
+team/app,1,OpenAI_Codex,closed,Add user login,Implement login,true
+team/app,2,OpenAI_Codex,closed,Add user login form,Same login task in another file,true
+team/app,3,Copilot,closed,Revert login change,undo the login,false
+team/app,4,OpenAI_Codex,closed,fix login crash,bugfix,true
+team/app,5,Devin,closed,Expand docs,docs only,true
+team/app,6,OpenAI_Codex,closed,Tidy util helpers,unrelated,false
+mega/one,10,OpenAI_Codex,closed,Update package a,code,true
+mega/one,11,OpenAI_Codex,closed,Patch package a,more,true
+mega/one,12,OpenAI_Codex,closed,Add package b,near miss partner,false
+other/lib,20,Cursor,closed,Readme tweak,root file,true
+other/lib,21,Copilot,closed,Deep module work,nested,false
+other/lib,22,Cursor,closed,fix package json,manifest,true
+other/lib,23,OpenAI_Codex,closed,Other nested file,also src/deep,false
