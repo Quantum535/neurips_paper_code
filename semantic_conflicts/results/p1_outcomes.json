@@ -1,0 +1,156 @@
+{
+  "a_conflict_vs_none": {
+    "or_mh": 0.8511595915313325,
+    "ci_lo": 0.8248548957571437,
+    "ci_hi": 0.8783031463864719,
+    "se_log": 0.01601670154068552,
+    "n_strata_used": 534,
+    "n_strata_discordant": 403,
+    "n_exposed": 42600,
+    "n_control": 534445,
+    "merged_rate_exposed": 0.7333333333333333,
+    "merged_rate_control": 0.8596450523440204,
+    "crude": {
+      "or_crude": 0.44899473916762617,
+      "ci_lo": 0.43886525278267396,
+      "ci_hi": 0.45935802509303497,
+      "cells": {
+        "a": 31240,
+        "b": 11360,
+        "c": 459433,
+        "d": 75012
+      }
+    },
+    "exposure": "file-overlap conflict",
+    "control": "no shared file (all other pairs)"
+  },
+  "b_dup_title_vs_rest": {
+    "or_mh": 1.5072442886312152,
+    "ci_lo": 1.3895505023262509,
+    "ci_hi": 1.634906641973944,
+    "se_log": 0.04148172850846184,
+    "n_strata_used": 207,
+    "n_strata_discordant": 168,
+    "n_exposed": 6945,
+    "n_control": 570100,
+    "merged_rate_exposed": 0.8289416846652268,
+    "merged_rate_control": 0.8505805998947553,
+    "crude": {
+      "or_crude": 0.851277792900672,
+      "ci_lo": 0.7993980174111645,
+      "ci_hi": 0.9065244908070728,
+      "cells": {
+        "a": 5757,
+        "b": 1188,
+        "c": 484916,
+        "d": 85184
+      }
+    },
+    "exposure": "duplicate-title pair",
+    "control": "all non-duplicate pairs"
+  },
+  "c_fif_vs_other_conflict": {
+    "or_mh": 1.0897650753245758,
+    "ci_lo": 1.019281889670544,
+    "ci_hi": 1.1651221624089043,
+    "se_log": 0.03411480858723482,
+    "n_strata_used": 334,
+    "n_strata_discordant": 257,
+    "n_exposed": 7872,
+    "n_control": 34728,
+    "merged_rate_exposed": 0.6408790650406504,
+    "merged_rate_control": 0.7542904860631191,
+    "crude": {
+      "or_crude": 0.5813246046612529,
+      "ci_lo": 0.5517986842332764,
+      "ci_hi": 0.6124304128309528,
+      "cells": {
+        "a": 5045,
+        "b": 2827,
+        "c": 26195,
+        "d": 8533
+      }
+    },
+    "exposure": "fix-in-flight (later title has fix/bug/patch token)",
+    "control": "other conflicting pairs"
+  },
+  "d_nearmiss_vs_nothing": {
+    "or_mh": 0.9402281919278838,
+    "ci_lo": 0.9228343616761338,
+    "ci_hi": 0.9579498657704133,
+    "se_log": 0.009527134883212211,
+    "n_strata_used": 430,
+    "n_strata_discordant": 326,
+    "n_exposed": 176756,
+    "n_control": 357689,
+    "merged_rate_exposed": 0.8177657335535993,
+    "merged_rate_control": 0.8803401837909469,
+    "crude": {
+      "or_crude": 0.6099534204748368,
+      "ci_lo": 0.6004271741863245,
+      "ci_hi": 0.6196308081044658,
+      "cells": {
+        "a": 144545,
+        "b": 32211,
+        "c": 314888,
+        "d": 42801
+      }
+    },
+    "exposure": "near-miss (shared depth-2 dir, no shared file)",
+    "control": "no shared file and no shared depth-2 dir"
+  },
+  "e_both_merged_shared_file": {
+    "excluded": true,
+    "reason": "Pool is outcome-conditioned: membership requires merged_a AND merged_b, so the later-PR merge outcome is deterministically 1 for every exposed pair; an odds ratio against any control is undefined/infinite by construction and would only restate the selection rule."
+  },
+  "a_dedup_pr_level": {
+    "or_mh": 0.8358984575516812,
+    "ci_lo": 0.7752385866747006,
+    "ci_hi": 0.9013047639106666,
+    "se_log": 0.03843759798299787,
+    "n_strata_used": 500,
+    "n_strata_discordant": 385,
+    "n_exposed": 11431,
+    "n_control": 12823,
+    "merged_rate_exposed": 0.6788557431545796,
+    "merged_rate_control": 0.7824222100912424,
+    "crude": {
+      "or_crude": 0.5878286210123862,
+      "ci_lo": 0.55500616962058,
+      "ci_hi": 0.6225921558990011,
+      "cells": {
+        "a": 7760,
+        "b": 3671,
+        "c": 10033,
+        "d": 2790
+      }
+    },
+    "exposure": "later PR ever in a conflicting pair",
+    "control": "later PR never in a conflicting pair"
+  },
+  "b_dedup_pr_level": {
+    "or_mh": 1.1368594976871689,
+    "ci_lo": 1.0089661212375596,
+    "ci_hi": 1.2809642368330982,
+    "se_log": 0.06089064442256283,
+    "n_strata_used": 207,
+    "n_strata_discordant": 168,
+    "n_exposed": 2912,
+    "n_control": 21342,
+    "merged_rate_exposed": 0.7898351648351648,
+    "merged_rate_control": 0.7259394620935246,
+    "crude": {
+      "or_crude": 1.418804359885911,
+      "ci_lo": 1.29140457416195,
+      "ci_hi": 1.5587724032475254,
+      "cells": {
+        "a": 2300,
+        "b": 612,
+        "c": 15493,
+        "d": 5849
+      }
+    },
+    "exposure": "later PR ever in a duplicate-title pair",
+    "control": "later PR never in a duplicate-title pair"
+  }
+}

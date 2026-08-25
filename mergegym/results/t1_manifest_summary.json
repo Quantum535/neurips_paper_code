@@ -1,0 +1,47 @@
+{
+  "t1_train_manifest": {
+    "train_n": 24283,
+    "train_repos": 870,
+    "train_conflict_rate": 0.32401268377053905,
+    "capped_pool_n": 29470,
+    "capped_pool_repos": 1098,
+    "mega_excluded_pool_n": 73316,
+    "mega_excluded_pool_repos": 1098,
+    "test_n": 5387,
+    "test_repos": 229,
+    "test_pairs_in_repos_unseen_in_train": 5387,
+    "train_global_conflict_rate_used_as_test_repo_rate": 0.32401268377053905,
+    "test_agent_pairs_unseen_in_train": 0,
+    "cap_per_repo": 200,
+    "seed": 0,
+    "mega_repos_excluded": [
+      "MontrealAI/AGI-Alpha-Agent-v0",
+      "mochilang/mochi"
+    ],
+    "trained_lr_test_auc": 0.644371793037303
+  },
+  "test_set": {
+    "n_pairs": 5387,
+    "n_repos": 229,
+    "positive_rate": 0.399295,
+    "enriched_base_rate_note": "test set is conflict-enriched; random P@100 = 0.3993",
+    "test_task_text_format": "title + ' || ' + body (verified); train texts constructed identically from pr_texts",
+    "mega_repos_in_test": [
+      "MontrealAI/AGI-Alpha-Agent-v0"
+    ]
+  },
+  "filename_leakage_baseline": {
+    "auc_count": 0.574414751755443,
+    "auc_jaccard": 0.5672073643845189,
+    "best_variant": "count",
+    "pct_pairs_sharing_file_token": 0.31149062558010027,
+    "pct_texts_naming_changed_file": 0.31223315388899203,
+    "n_texts": 10774,
+    "pct_pairs_either_side_names_changed_file": 0.4846853536291071
+  },
+  "notes": {
+    "repo_rate_degeneracy": "All 5,387 test pairs are in repos with zero train pairs (repo-held-out by construction), so the train repo-conflict-rate feature is the constant train global rate 0.3240 at test time.",
+    "trained_lr_features": "TF-IDF cosine (IDF fit on train docs only), title Jaccard, log1p overlap-hours, same-agent indicator, 14 agent-pair one-hots (most frequent pair = reference), train-only repo conflict rate; IRLS logistic regression, L2=1e-4, standardized on train.",
+    "trained_lr_train_in_sample_auc": 0.8214
+  }
+}

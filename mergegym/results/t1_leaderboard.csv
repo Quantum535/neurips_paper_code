@@ -1,0 +1,10 @@
+method,auc,p_at_100,within_repo_mean_auc_64,base_rate
+Repo base rate (non-test pairs),0.601,1.0,0.5,0.3993
+Overlap hours,0.5699,0.62,0.5316,0.3993
+TF-IDF cosine,0.6436,0.82,0.6585,0.3993
+Title Jaccard,0.6291,0.89,0.6255,0.3993
+"Fused LR (4 features, 5-fold OOF)",0.6759,0.97,0.6572,0.3993
+Filename-token overlap (count),0.5744,0.65,0.5456,0.3993
+Zero-shot LLM,0.7044,0.96,0.7425,0.3993
+LLM + all features (5-fold OOF),0.7404,0.99,0.7378,0.3993
+Trained repo-held-out LR,0.6444,0.89,0.6844,0.3993

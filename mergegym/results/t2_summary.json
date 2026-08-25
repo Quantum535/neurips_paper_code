@@ -1,0 +1,45 @@
+{
+ "core_pairs": 1614,
+ "core_repos": 264,
+ "unavailable_repos": 5,
+ "unavailable_pairs": 35,
+ "survived": 1579,
+ "replayed": 1579,
+ "conflicting": 162,
+ "yield_pct": 10.26,
+ "yield_ci": [
+  8.86,
+  11.85
+ ],
+ "cross_agent": {
+  "conf": 1,
+  "n": 11
+ },
+ "hunks": {
+  "pairs": 160,
+  "files": 579,
+  "content": 1635,
+  "locatable": 1469,
+  "loc_rate": 0.8985,
+  "hunk_exact": {
+   "ours": 0.2839,
+   "theirs": 0.4956,
+   "union_ot": 0.128,
+   "union_to": 0.128,
+   "best_of": 0.7617
+  },
+  "hunk_sim90": {
+   "ours": 0.5126,
+   "theirs": 0.5698,
+   "union_ot": 0.1409,
+   "union_to": 0.1464
+  },
+  "pair_macro_exact": {
+   "ours": 0.3797,
+   "theirs": 0.5088,
+   "union_ot": 0.3408,
+   "union_to": 0.3408,
+   "pairs": 129
+  }
+ }
+}

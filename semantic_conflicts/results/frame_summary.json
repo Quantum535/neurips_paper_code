@@ -1,0 +1,18 @@
+{
+ "frame_size": 8949,
+ "by_pool": {
+  "frameA": 3184,
+  "dup": 1500,
+  "revert": 278,
+  "cross_agent": 99,
+  "near_miss": 2000,
+  "control": 2000
+ },
+ "frameA_before_cap": 5471,
+ "frameA_after_cap": 3184,
+ "dup_pool": 6945,
+ "near_miss_pool": 176756,
+ "control_pool": 357062,
+ "cross_agent_candidates": 99,
+ "seed": 20260824
+}

@@ -1,0 +1,326 @@
+[
+ {
+  "name": "test n",
+  "got": 5387.0,
+  "expect": 5387,
+  "ok": true
+ },
+ {
+  "name": "positive rate",
+  "got": 0.3993,
+  "expect": 0.3993,
+  "ok": true
+ },
+ {
+  "name": "LLM AUC",
+  "got": 0.7044,
+  "expect": 0.7044,
+  "ok": true
+ },
+ {
+  "name": "TF-IDF cosine AUC",
+  "got": 0.6436,
+  "expect": 0.6436,
+  "ok": true
+ },
+ {
+  "name": "fused LR OOF AUC",
+  "got": 0.6759,
+  "expect": 0.6759,
+  "ok": true
+ },
+ {
+  "name": "filename overlap AUC",
+  "got": 0.5744,
+  "expect": 0.5744,
+  "ok": true
+ },
+ {
+  "name": "train n",
+  "got": 24283.0,
+  "expect": 24283,
+  "ok": true
+ },
+ {
+  "name": "train repos",
+  "got": 870.0,
+  "expect": 870,
+  "ok": true
+ },
+ {
+  "name": "train conflict rate",
+  "got": 0.324,
+  "expect": 0.324,
+  "ok": true
+ },
+ {
+  "name": "trained repo-held-out LR AUC",
+  "got": 0.6444,
+  "expect": 0.6444,
+  "ok": true
+ },
+ {
+  "name": "reliability bin0 pred",
+  "got": 0.092,
+  "expect": 0.092,
+  "ok": true
+ },
+ {
+  "name": "reliability bin0 actual",
+  "got": 0.266,
+  "expect": 0.266,
+  "ok": true
+ },
+ {
+  "name": "reliability bin0 n",
+  "got": 2788.0,
+  "expect": 2788,
+  "ok": true
+ },
+ {
+  "name": "reliability bin1 pred",
+  "got": 0.263,
+  "expect": 0.263,
+  "ok": true
+ },
+ {
+  "name": "reliability bin1 actual",
+  "got": 0.388,
+  "expect": 0.388,
+  "ok": true
+ },
+ {
+  "name": "reliability bin1 n",
+  "got": 1290.0,
+  "expect": 1290,
+  "ok": true
+ },
+ {
+  "name": "reliability bin2 pred",
+  "got": 0.463,
+  "expect": 0.463,
+  "ok": true
+ },
+ {
+  "name": "reliability bin2 actual",
+  "got": 0.456,
+  "expect": 0.456,
+  "ok": true
+ },
+ {
+  "name": "reliability bin2 n",
+  "got": 504.0,
+  "expect": 504,
+  "ok": true
+ },
+ {
+  "name": "reliability bin3 pred",
+  "got": 0.696,
+  "expect": 0.696,
+  "ok": true
+ },
+ {
+  "name": "reliability bin3 actual",
+  "got": 0.748,
+  "expect": 0.748,
+  "ok": true
+ },
+ {
+  "name": "reliability bin3 n",
+  "got": 409.0,
+  "expect": 409,
+  "ok": true
+ },
+ {
+  "name": "reliability bin4 pred",
+  "got": 0.878,
+  "expect": 0.878,
+  "ok": true
+ },
+ {
+  "name": "reliability bin4 actual",
+  "got": 0.939,
+  "expect": 0.939,
+  "ok": true
+ },
+ {
+  "name": "reliability bin4 n",
+  "got": 396.0,
+  "expect": 396,
+  "ok": true
+ },
+ {
+  "name": "LLM P@50",
+  "got": 0.94,
+  "expect": 0.94,
+  "ok": true
+ },
+ {
+  "name": "LLM P@100",
+  "got": 0.96,
+  "expect": 0.96,
+  "ok": true
+ },
+ {
+  "name": "within-repo repo count",
+  "got": 64.0,
+  "expect": 64,
+  "ok": true
+ },
+ {
+  "name": "within-repo pairs covered",
+  "got": 4773.0,
+  "expect": 4773,
+  "ok": true
+ },
+ {
+  "name": "within-repo mean LLM AUC",
+  "got": 0.7425,
+  "expect": 0.7425,
+  "ok": true
+ },
+ {
+  "name": "repos with AUC>0.5",
+  "got": 58.0,
+  "expect": 58,
+  "ok": true
+ },
+ {
+  "name": "T3 episode count",
+  "got": 97.0,
+  "expect": 97,
+  "ok": true
+ },
+ {
+  "name": "T3 conflicting pairs",
+  "got": 38526.0,
+  "expect": 38526,
+  "ok": true
+ },
+ {
+  "name": "T3 distinct PRs",
+  "got": 19397.0,
+  "expect": 19397,
+  "ok": true
+ },
+ {
+  "name": "tau=0.2 median makespan inflation",
+  "got": 65.0,
+  "expect": 65.0,
+  "ok": true
+ },
+ {
+  "name": "tau=0.2 median net avoided",
+  "got": 91.7,
+  "expect": 91.7,
+  "ok": true
+ },
+ {
+  "name": "T2 pairs",
+  "got": 6387.0,
+  "expect": 6387,
+  "ok": true
+ },
+ {
+  "name": "T2 repos",
+  "got": 391.0,
+  "expect": 391,
+  "ok": true
+ },
+ {
+  "name": "T2 lang TypeScript",
+  "got": 2030.0,
+  "expect": 2030,
+  "ok": true
+ },
+ {
+  "name": "T2 lang C#",
+  "got": 1108.0,
+  "expect": 1108,
+  "ok": true
+ },
+ {
+  "name": "T2 lang JavaScript",
+  "got": 645.0,
+  "expect": 645,
+  "ok": true
+ },
+ {
+  "name": "T2 lang Python",
+  "got": 612.0,
+  "expect": 612,
+  "ok": true
+ },
+ {
+  "name": "T2 lang Go",
+  "got": 473.0,
+  "expect": 473,
+  "ok": true
+ },
+ {
+  "name": "T2 lang Ruby",
+  "got": 438.0,
+  "expect": 438,
+  "ok": true
+ },
+ {
+  "name": "T2 lang Rust",
+  "got": 323.0,
+  "expect": 323,
+  "ok": true
+ },
+ {
+  "name": "T2 lang Dart",
+  "got": 228.0,
+  "expect": 228,
+  "ok": true
+ },
+ {
+  "name": "T2 lang Java",
+  "got": 207.0,
+  "expect": 207,
+  "ok": true
+ },
+ {
+  "name": "T2 distinct PRs",
+  "got": 3779.0,
+  "expect": 3779,
+  "ok": true
+ },
+ {
+  "name": "T2 median PR size",
+  "got": 207.0,
+  "expect": 207.0,
+  "ok": true
+ },
+ {
+  "name": "T2-core pairs",
+  "got": 1614.0,
+  "expect": 1614,
+  "ok": true
+ },
+ {
+  "name": "FIFO median delay/PR",
+  "got": 60.3,
+  "expect": 60.3,
+  "ok": true
+ },
+ {
+  "name": "oracle median delay/PR",
+  "got": 6.9,
+  "expect": 6.9,
+  "ok": true
+ },
+ {
+  "name": "tau=0.20 median delay/PR",
+  "got": 16.5,
+  "expect": 16.5,
+  "ok": true
+ },
+ {
+  "name": "tau=0.25 median delay/PR",
+  "got": 7.6,
+  "expect": 7.6,
+  "ok": true
+ }
+]

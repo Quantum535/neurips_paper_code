@@ -1,0 +1,46 @@
+{
+  "baseline_all_pairs": {
+    "n_pairs": 577045,
+    "n_excluded": 0,
+    "mh_or": 0.8512,
+    "ci95": [
+      0.8249,
+      0.8783
+    ],
+    "n_strata": 534,
+    "mh_num": 3547.3,
+    "mh_den": 4167.6
+  },
+  "excl_title_jaccard_ge_0.5": {
+    "n_pairs": 570108,
+    "n_excluded": 6937,
+    "mh_or": 0.8612,
+    "ci95": [
+      0.8341,
+      0.8892
+    ],
+    "n_strata": 514,
+    "mh_num": 3452.5,
+    "mh_den": 4008.9
+  },
+  "excl_tfidf_cos_ge_0.7": {
+    "n_pairs": 576561,
+    "n_excluded": 484,
+    "mh_or": 0.8569,
+    "ci95": [
+      0.8303,
+      0.8843
+    ],
+    "n_strata": 528,
+    "mh_num": 3529.0,
+    "mh_den": 4118.4
+  },
+  "_definitions": {
+    "outcome": "later-opened PR (pr_b) merged (pr_texts.merged)",
+    "exposure": "conflict (>=1 shared changed filepath)",
+    "strata": "repo; strata contributing require both exposure arms and R+S>0",
+    "ci": "Robins-Breslow-Greenland variance of log MH-OR, 95% Wald",
+    "title_jaccard": "lowercase, [..] tags deleted, non-alphanumeric->space, token-set Jaccard of normalized titles",
+    "tfidf": "per-PR doc = title+' || '+body, log-tf x smoothed idf over 33,596 PR docs, cosine"
+  }
+}

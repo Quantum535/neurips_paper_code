@@ -1,0 +1,100 @@
+repo,pr_a,pr_b,agent_a,agent_b,title_a,title_b,merged_a,merged_b,pool,n_shared_files
+ElectNewt/Distribt,47,48,OpenAI_Codex,Copilot,Implement outbox pattern for products,Implement outbox pattern for reliable event publishing in Products microservice,False,False,dup_title,6
+OpenSprinkler/OpenSprinkler-App,263,264,Copilot,OpenAI_Codex,Fix localStorage namespacing for reverse proxy deployments,Fix localStorage namespace for reverse proxy,False,True,dup_title,4
+Rello/analytics,517,519,OpenAI_Codex,Copilot,Enable grouping for all item types,Fix NewGroupPlaceholder CSS overlap and enable grouping for all item types,True,False,dup_title,1
+berachain/beacon-kit,2840,2841,Cursor,OpenAI_Codex,feat(node-api): Create proof endpoint for validator balance,feat(node-api): [codex] Add validator balance proof endpoint,False,False,dup_title,6
+liveblocks/liveblocks,2522,2523,Devin,Cursor,Fix typos in react-ui documentation,Fix typos in react-ui documentation,False,False,dup_title,3
+liveblocks/liveblocks,2522,2525,Devin,Cursor,Fix typos in react-ui documentation,Fix typos in react-ui documentation,False,False,dup_title,1
+ryokun6/ryos,200,204,Cursor,OpenAI_Codex,Fix iPod shuffle navigation logic,Fix iPod shuffle navigation,False,False,dup_title,1
+AgentOps-AI/agentops,1064,1065,Devin,OpenAI_Codex,feat(docs): add LlamaIndex integration documentation,Fix xAI icon path,True,True,both_merged_shared_file,1
+EduMIPS64/edumips64,1364,1378,Copilot,OpenAI_Codex,Add Cache simulator documentation to the manual,Fix isHexNumber logic,True,True,both_merged_shared_file,2
+EduMIPS64/edumips64,1364,1379,Copilot,OpenAI_Codex,Add Cache simulator documentation to the manual,Fix typo and comment,True,True,both_merged_shared_file,2
+EduMIPS64/edumips64,1364,1380,Copilot,OpenAI_Codex,Add Cache simulator documentation to the manual,Add FPU multiplication unit tests,True,True,both_merged_shared_file,3
+PRQL/prql,5286,5287,Claude_Code,OpenAI_Codex,chore: Upgrade GitHub Actions to ubuntu-24.04,docs: fix direction of compilation in example,True,True,both_merged_shared_file,35
+PRQL/prql,5287,5289,OpenAI_Codex,Claude_Code,docs: fix direction of compilation in example,"fix: Correct typo ""trough"" to ""through""",True,True,both_merged_shared_file,3
+Rello/analytics,517,518,OpenAI_Codex,Copilot,Enable grouping for all item types,Add threshold lines to charts using Chart.js annotation plugin,True,True,both_merged_shared_file,7
+Significant-Gravitas/AutoGPT,9965,10340,OpenAI_Codex,Claude_Code,feat(blocks/gmail): add Gmail thread blocks,feat(backend): Integrate GCS file storage with automatic expiration for Agent File Input,True,True,both_merged_shared_file,217
+Skyscanner/turbolift,173,176,OpenAI_Codex,Copilot,Add tests for validateFlags,Fix Go test function naming convention violations,True,True,both_merged_shared_file,2
+Sls0n/Prismify,39,42,OpenAI_Codex,Cursor,Add profile dialog with user join info,Fix dialog closing issue in dropdown,True,True,both_merged_shared_file,2
+WorkflowAI/WorkflowAI,408,460,OpenAI_Codex,Cursor,Sort tasks by recent activity,Verify agent prefix documentation accuracy,True,True,both_merged_shared_file,3
+WorkflowAI/WorkflowAI,431,460,OpenAI_Codex,Cursor,Fix copy model tooltip,Verify agent prefix documentation accuracy,True,True,both_merged_shared_file,1
+WorkflowAI/WorkflowAI,442,460,OpenAI_Codex,Cursor,Fix instructions overflow on versions page,Verify agent prefix documentation accuracy,True,True,both_merged_shared_file,1
+WorkflowAI/WorkflowAI,446,460,OpenAI_Codex,Cursor,Update schemas page headers,Verify agent prefix documentation accuracy,True,True,both_merged_shared_file,1
+WorkflowAI/WorkflowAI,447,460,OpenAI_Codex,Cursor,Fix price header,Verify agent prefix documentation accuracy,True,True,both_merged_shared_file,1
+airbytehq/airbyte,62925,62941,Devin,Claude_Code,chore(source-singlestore): Convert to new gradle build flow (do not merge),fix: correct file ownership in java-connector-base Dockerfile,True,True,both_merged_shared_file,1
+amantus-ai/vibetunnel,333,336,OpenAI_Codex,Claude_Code,Improve asciicast clear offset caching,Fix Safari clipboard paste,True,True,both_merged_shared_file,8
+benwbrum/fromthepage,4765,4791,OpenAI_Codex,Copilot,Add note about overnight stats update,Implement WCAG 2.1 compliance for subject link hover behavior,True,True,both_merged_shared_file,4
+benwbrum/fromthepage,4765,4792,OpenAI_Codex,Copilot,Add note about overnight stats update,Fix expunge failing when page version has no previous version,True,True,both_merged_shared_file,1
+benwbrum/fromthepage,4765,4793,OpenAI_Codex,Copilot,Add note about overnight stats update,Don't send overnight activity email to owners if no new activity,True,True,both_merged_shared_file,3
+benwbrum/fromthepage,4765,4794,OpenAI_Codex,Copilot,Add note about overnight stats update,Add comprehensive sitemap generation and SEO improvements for WayBack Machine archival,True,True,both_merged_shared_file,16
+different-ai/zero-finance,116,117,OpenAI_Codex,Devin,Simpler onboarding flow,Implement PostHog Analytics Integration,True,True,both_merged_shared_file,7
+elizaOS/eliza,5565,5581,Claude_Code,Cursor,feat: implement service types and standardized interfaces with getServicesByType() method,Fix auto-build test flag usage,True,True,both_merged_shared_file,1
+estruyf/vscode-demo-time,147,163,OpenAI_Codex,Copilot,Add PowerPoint trigger add-in,Add laser pointer feature for slide presentations,True,True,both_merged_shared_file,5
+estruyf/vscode-demo-time,147,166,OpenAI_Codex,Copilot,Add PowerPoint trigger add-in,Add PowerPoint-like zoom feature for slide presentations,True,True,both_merged_shared_file,8
+giselles-ai/giselle,1118,1121,Claude_Code,OpenAI_Codex,feat(rag2): add complete Ingest Pipeline functionality,Add e2e test workflow,True,True,both_merged_shared_file,1
+gofiber/fiber,3508,3583,OpenAI_Codex,Copilot,🧹 chore: Replace math/rand with crypto/rand,🔥 feat: Add default UTF-8 charset,True,True,both_merged_shared_file,78
+gofiber/fiber,3580,3583,OpenAI_Codex,Copilot,🧹 chore: Refactor Opt-in support for CBOR,🔥 feat: Add default UTF-8 charset,True,True,both_merged_shared_file,11
+gofiber/fiber,3583,3585,Copilot,OpenAI_Codex,🔥 feat: Add default UTF-8 charset,Update Copilot docs and setup,True,True,both_merged_shared_file,2
+gofiber/fiber,3583,3590,Copilot,OpenAI_Codex,🔥 feat: Add default UTF-8 charset,Add modernize lint,True,True,both_merged_shared_file,31
+gofiber/fiber,3583,3604,Copilot,OpenAI_Codex,🔥 feat: Add default UTF-8 charset,🔥 feat: Add config for Timeout middleware,True,True,both_merged_shared_file,5
+gofiber/fiber,3508,3608,OpenAI_Codex,Copilot,🧹 chore: Replace math/rand with crypto/rand,Fix Cookie SameSite constants to Pascal case per RFC specification,True,True,both_merged_shared_file,32
+gofiber/fiber,3583,3614,Copilot,OpenAI_Codex,🔥 feat: Add default UTF-8 charset,Skip unstable GenericParseType benchmarks,True,True,both_merged_shared_file,1
+gofiber/fiber,3608,3614,Copilot,OpenAI_Codex,Fix Cookie SameSite constants to Pascal case per RFC specification,Skip unstable GenericParseType benchmarks,True,True,both_merged_shared_file,1
+gofiber/fiber,3608,3617,Copilot,OpenAI_Codex,Fix Cookie SameSite constants to Pascal case per RFC specification,Enable govet shadow,True,True,both_merged_shared_file,18
+gtg922r/obsidian-numerals,100,102,OpenAI_Codex,Copilot,Fix SyntaxError text hidden when emitters present,Fix global functions not working across math blocks,True,True,both_merged_shared_file,7
+gtg922r/obsidian-numerals,102,104,Copilot,OpenAI_Codex,Fix global functions not working across math blocks,Add CHANGELOG,True,True,both_merged_shared_file,1
+langfuse/langfuse-docs,1634,1643,Cursor,OpenAI_Codex,docs: (cursor background agent) docs and cookbooks for sdk v3 updates,Update library resources,True,True,both_merged_shared_file,1
+liam-hq/liam,1599,1610,Devin,Claude_Code,Update flags discovery endpoint for flags v4 migration,✅ Add tests for organization_members RLS policies from PR #1598,True,True,both_merged_shared_file,1
+liam-hq/liam,2079,2156,Devin,Claude_Code,feat: implement DDL execution using @liam-hq/pglite-server,feat(db-structure): deprecate schema.relationships in favor of constraintsToRelationships,True,True,both_merged_shared_file,7
+liam-hq/liam,2156,2195,Claude_Code,Devin,feat(db-structure): deprecate schema.relationships in favor of constraintsToRelationships,fix: improve E2E test performance by avoiding unnecessary redirects,True,True,both_merged_shared_file,1
+liam-hq/liam,2156,2200,Claude_Code,Devin,feat(db-structure): deprecate schema.relationships in favor of constraintsToRelationships,feat(schema-bench): implement Phase 1 workspace initialization and benchmark execution,True,True,both_merged_shared_file,11
+liam-hq/liam,2200,2224,Devin,Claude_Code,feat(schema-bench): implement Phase 1 workspace initialization and benchmark execution,feat: remove redundant column.unique field from schema,True,True,both_merged_shared_file,25
+liam-hq/liam,2219,2224,Devin,Claude_Code,Add GitHub issue MCP tools to Claude workflow,feat: remove redundant column.unique field from schema,True,True,both_merged_shared_file,1
+nodetool-ai/nodetool,143,157,OpenAI_Codex,Cursor,Add Node Packs docs,Enhance Nodetool UI documentation,True,True,both_merged_shared_file,1
+novuhq/novu,8562,8564,Cursor,Devin,feat(dashboard): Add copy curl button to workflow drawer,"fix(api,application-generic): remove workflow and activity feed limits for self-hosted instances",True,True,both_merged_shared_file,2
+novuhq/novu,8562,8584,Cursor,Devin,feat(dashboard): Add copy curl button to workflow drawer,fix(api): sort inbox preferences by workflow creation date fixes NV-6191,True,True,both_merged_shared_file,248
+novuhq/novu,8565,8584,Cursor,Devin,fix(web): Fetch branding details on page load of branding,fix(api): sort inbox preferences by workflow creation date fixes NV-6191,True,True,both_merged_shared_file,246
+onlook-dev/onlook,2091,2093,OpenAI_Codex,Devin,Add style guide tool call,feat: implement transKeys pattern for type-safe translations,True,True,both_merged_shared_file,27
+oven-sh/bun,19884,20265,OpenAI_Codex,Cursor,Add remoteRoot/localRoot mapping for VSCode,Introduce ahead of time bundling for HTML imports with `bun build`,True,True,both_merged_shared_file,6
+oven-sh/bun,20198,20265,OpenAI_Codex,Cursor,Add FileRoute for serving files,Introduce ahead of time bundling for HTML imports with `bun build`,True,True,both_merged_shared_file,27
+oven-sh/bun,19884,20295,OpenAI_Codex,Cursor,Add remoteRoot/localRoot mapping for VSCode,Fix proxy handling in bun audit,True,True,both_merged_shared_file,1
+oven-sh/bun,19884,20419,OpenAI_Codex,Cursor,Add remoteRoot/localRoot mapping for VSCode,`bun pm view` -> `bun info`,True,True,both_merged_shared_file,5
+oven-sh/bun,19884,20582,OpenAI_Codex,Cursor,Add remoteRoot/localRoot mapping for VSCode,Enable ReadableStream as stdin for Bun.spawn,True,True,both_merged_shared_file,10
+oven-sh/bun,20577,20582,OpenAI_Codex,Cursor,Fix flushHeaders streaming,Enable ReadableStream as stdin for Bun.spawn,True,True,both_merged_shared_file,99
+oven-sh/bun,19884,20613,OpenAI_Codex,Cursor,Add remoteRoot/localRoot mapping for VSCode,Implement per-message deflate support in WebSocket client,True,True,both_merged_shared_file,3
+oven-sh/bun,20577,20613,OpenAI_Codex,Cursor,Fix flushHeaders streaming,Implement per-message deflate support in WebSocket client,True,True,both_merged_shared_file,30
+oven-sh/bun,19884,20698,OpenAI_Codex,Claude_Code,Add remoteRoot/localRoot mapping for VSCode,Match Node.js v24 behavior for `napi_get_value_string_utf8` handling of `NAPI_AUTO_LENGTH`,True,True,both_merged_shared_file,11
+oven-sh/bun,19884,20737,OpenAI_Codex,Cursor,Add remoteRoot/localRoot mapping for VSCode,"Implement more `v8::Array::New` overloads, `v8::Object::{Get,Set}`, `v8::Value::StrictEquals`, `v8::Array::Iterate`",True,True,both_merged_shared_file,25
+oven-sh/bun,20698,20737,Claude_Code,Cursor,Match Node.js v24 behavior for `napi_get_value_string_utf8` handling of `NAPI_AUTO_LENGTH`,"Implement more `v8::Array::New` overloads, `v8::Object::{Get,Set}`, `v8::Value::StrictEquals`, `v8::Array::Iterate`",True,True,both_merged_shared_file,81
+oven-sh/bun,19884,20782,OpenAI_Codex,Cursor,Add remoteRoot/localRoot mapping for VSCode,Introduce Bun.randomUUIDv5,True,True,both_merged_shared_file,9
+oven-sh/bun,20698,20782,Claude_Code,Cursor,Match Node.js v24 behavior for `napi_get_value_string_utf8` handling of `NAPI_AUTO_LENGTH`,Introduce Bun.randomUUIDv5,True,True,both_merged_shared_file,14
+oven-sh/bun,19884,21053,OpenAI_Codex,Claude_Code,Add remoteRoot/localRoot mapping for VSCode,Add --quiet flag to bun pm pack command,True,True,both_merged_shared_file,13
+promptfoo/promptfoo,4330,4998,OpenAI_Codex,Claude_Code,chore(redteam): improve redteam plugin error messaging,chore(providers): add GitHub Models provider,True,True,both_merged_shared_file,1
+quarylabs/sqruff,1643,1664,OpenAI_Codex,Claude_Code,feat: add Snowflake ASOF join fixtures,feat: Add T-SQL dialect support,True,True,both_merged_shared_file,1
+quarylabs/sqruff,1664,1671,Claude_Code,OpenAI_Codex,feat: Add T-SQL dialect support,refactor(logging): replace tracing with log + fern backend,True,True,both_merged_shared_file,4
+risingwavelabs/risingwave,22554,22639,Cursor,Copilot,refactor: Split config file into smaller modules,ci: Fix e2e-deltalake-sink-rust-tests by enabling sink-deltalake feature in ci-dev builds,True,True,both_merged_shared_file,23
+shiosyakeyakini-info/miria,761,764,OpenAI_Codex,Copilot,Fix remote clip loading on user page,Fix following count visibility by checking followingVisibility field,True,True,both_merged_shared_file,4
+shiosyakeyakini-info/miria,761,767,OpenAI_Codex,Copilot,Fix remote clip loading on user page,修正: createTokenとchatRoomInvitationReceived通知のUnimplementedErrorを解決,True,True,both_merged_shared_file,37
+theopenco/llmgateway,208,354,Devin,OpenAI_Codex,feat: add email verification,fix(ui): reuse provider dropdown in onboarding,True,True,both_merged_shared_file,5
+theopenco/llmgateway,208,356,Devin,OpenAI_Codex,feat: add email verification,feat(ui): add upgrade button for provider keys,True,True,both_merged_shared_file,10
+theopenco/llmgateway,208,357,Devin,OpenAI_Codex,feat: add email verification,fix(ui): adapt provider slug generation,True,True,both_merged_shared_file,4
+theopenco/llmgateway,208,365,Devin,OpenAI_Codex,feat: add email verification,fix(api): use typed body parsing in API routes,True,True,both_merged_shared_file,8
+theopenco/llmgateway,208,420,Devin,Cursor,feat: add email verification,feat(telemetry): create self-hosted installation tracking table,True,True,both_merged_shared_file,43
+theopenco/llmgateway,208,437,Devin,Cursor,feat: add email verification,feat(models): add per-requests pricing model,True,True,both_merged_shared_file,16
+theopenco/llmgateway,208,439,Devin,Cursor,feat: add email verification,Refactor env vars for dynamic configuration,True,True,both_merged_shared_file,27
+theopenco/llmgateway,208,440,Devin,Cursor,feat: add email verification,feat(models): track & validate max tokens,True,True,both_merged_shared_file,16
+theopenco/llmgateway,208,442,Devin,Cursor,feat: add email verification,fix(chat): handle chat completion errors and logging,True,True,both_merged_shared_file,1
+theopenco/llmgateway,208,443,Devin,Cursor,feat: add email verification,fix(telemetry): make telemetry opt-in with docker default,True,True,both_merged_shared_file,5
+theopenco/llmgateway,208,449,Devin,Cursor,feat: add email verification,fix(credits): handle failed payment intents,True,True,both_merged_shared_file,1
+theopenco/llmgateway,208,462,Devin,Cursor,feat: add email verification,fix(onboarding): adapt API key display,True,True,both_merged_shared_file,1
+theopenco/llmgateway,208,463,Devin,Cursor,feat: add email verification,fix(onboarding): improve credits vs BYOK flow,True,True,both_merged_shared_file,5
+theopenco/llmgateway,208,465,Devin,Cursor,feat: add email verification,fix(onboarding): trigger onboarding redirect when incomplete,True,True,both_merged_shared_file,1
+theopenco/llmgateway,208,466,Devin,Cursor,feat: add email verification,fix(onboarding): adapt button behavior,True,True,both_merged_shared_file,6
+tokens-studio/figma-plugin,3374,3394,Copilot,Cursor,Remember variable export settings and themes in file,Resolve duplicate enter key shortcut warning,True,True,both_merged_shared_file,42
+tokens-studio/figma-plugin,3386,3394,Copilot,Cursor,"[WIP] Add a retry button to the ""Couldnt load tokens stored on x"" callouts",Resolve duplicate enter key shortcut warning,True,True,both_merged_shared_file,13
+tokens-studio/figma-plugin,3374,3395,Copilot,Cursor,Remember variable export settings and themes in file,fix state update warning in components,True,True,both_merged_shared_file,2
+tokens-studio/figma-plugin,3386,3395,Copilot,Cursor,"[WIP] Add a retry button to the ""Couldnt load tokens stored on x"" callouts",fix state update warning in components,True,True,both_merged_shared_file,2
+tokens-studio/figma-plugin,3394,3404,Cursor,Copilot,Resolve duplicate enter key shortcut warning,Add OKLCH color support to Figma plugin,True,True,both_merged_shared_file,47
+vltpkg/vltpkg,851,852,Copilot,Cursor,feat: Add :path() selector to dependency query system,gui: configure eslint for react hooks,True,True,both_merged_shared_file,1
+airbytehq/airbyte,62941,63713,Claude_Code,Devin,fix: correct file ownership in java-connector-base Dockerfile,fix(source-snowflake): revert base image from 2.0.3 to 2.0.2 to fix certificate errors,True,True,revert_title,0
+nodetool-ai/nodetool,158,159,Cursor,OpenAI_Codex,Add documentation for base nodes,"Revert web changes, update electron docs",True,True,revert_title,0

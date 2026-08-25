@@ -1,0 +1,72 @@
+{
+ "full": {
+  "pairs": 6387,
+  "repos": 391,
+  "unavail_pairs": 447,
+  "ref_missing": 4,
+  "replayed": 5936,
+  "surv_pct": 92.9,
+  "conflicting": 1252,
+  "yield_pct": 21.1,
+  "ci": [
+   20.1,
+   22.1
+  ]
+ },
+ "core": {
+  "pairs": 1614,
+  "repos": 264,
+  "unavail_pairs": 35,
+  "ref_missing": 0,
+  "replayed": 1579,
+  "surv_pct": 97.8,
+  "conflicting": 162,
+  "yield_pct": 10.3,
+  "ci": [
+   8.9,
+   11.9
+  ]
+ },
+ "full_excl_mega": {
+  "pairs": 6207,
+  "repos": 389,
+  "unavail_pairs": 447,
+  "ref_missing": 4,
+  "replayed": 5756,
+  "surv_pct": 92.7,
+  "conflicting": 1252,
+  "yield_pct": 21.8,
+  "ci": [
+   20.7,
+   22.8
+  ]
+ },
+ "full_cross_agent": {
+  "pairs": 88,
+  "repos": 28,
+  "unavail_pairs": 0,
+  "ref_missing": 0,
+  "replayed": 88,
+  "surv_pct": 100.0,
+  "conflicting": 28,
+  "yield_pct": 31.8,
+  "ci": [
+   23.0,
+   42.1
+  ]
+ },
+ "full_same_agent": {
+  "pairs": 6299,
+  "repos": 388,
+  "unavail_pairs": 447,
+  "ref_missing": 4,
+  "replayed": 5848,
+  "surv_pct": 92.8,
+  "conflicting": 1224,
+  "yield_pct": 20.9,
+  "ci": [
+   19.9,
+   22.0
+  ]
+ }
+}
